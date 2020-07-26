@@ -1,0 +1,12 @@
+button:hover{
+  color:black;
+} 
+
+.container{
+    margin-top: 50px;
+    padding: 20px;
+    width: 350px;
+    height: 270px;
+    background-color: lightgrey;
+
+}

@@ -1,0 +1,24 @@
+<div class="container">
+     <div class="row">
+     <div class="col-xl-12">
+<form #userlogin="ngForm" (ngSubmit) = "onSubmit(userlogin)">
+<br>
+      <div>
+           <label> UserName: </label>
+           <input  type="text" name="username" placeholder="Username" ngModel> 
+           
+     </div>
+<br>
+     <div>
+          <label> password: </label>
+          <input type="password" name="password" placeholder="password" ngModel> 
+     </div>
+<br>
+  <div>
+     <button type="submit"  class="btn btn-primary" >login</button>
+ </div>
+
+</form> 
+</div>
+</div>
+</div>
