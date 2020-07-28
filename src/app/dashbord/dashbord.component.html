@@ -1,1 +1,37 @@
-<h2>Welcome</h2>
+
+    <div class="container" *ngFor="let record of dashbordData">
+        <h6>Sales Performance</h6>
+    <div class="row"> 
+      <div class="card-columns">
+        <div class="col card-body card bg-primary text-center">Invoice Booked<br>{{record["Invoice book"]}}</div>
+        <div class="col card-body card bg-primary text-center">Boxes Dispatched<br>{{record["Boxes Dispatched"]}}</div>
+        <div class="col card-body card bg-primary text-center">Pairs Dispatched<br>{{record["Pairs Dispatched"]}}</div>
+        <div class="col card-body card bg-primary text-center">Revenue<br>{{record["Revenue"]}}</div>
+      </div>
+    
+    </div>
+    </div>
+
+     <div class="container" *ngFor="let record of purchase">
+        <h6>Purchase Index</h6>
+      <div class="row">   
+        <div class="col-md-6 card-columns">   
+        <div class="card-body card bg-warning text-center">Purchase Entries Made<br>{{record["Purchase Entries Made"]}}</div><br><br>
+        <div class="card-body card bg-warning text-center">Total Purchase<br>{{record["Total Purchase"]}}</div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="container" *ngFor="let record of Product">
+    <h6>Product Planning</h6>
+      <div class="row">
+        <div class="card-columns">
+        <div class="card-body card bg-success text-center">Jobs Raised<br>{{record["Jobs Raised"]}}</div><br>
+        <div class="card-body card bg-success text-center">Jobs Completed<br>{{record["Jobs Completed"]}}</div>
+        <div class="card-body card bg-success text-center">Jobs Updated<br>{{record["Jobs Update"]}}</div><br>
+        <div class="card-body card bg-success text-center">Box Packed<br>{{record["Box Packed"]}}</div><br>
+        <div class="card-body card bg-success text-center">Pairs Product<br>{{record["Pairs Product"]}}</div><br><br>
+      </div>
+    </div>
+      </div> 
+
